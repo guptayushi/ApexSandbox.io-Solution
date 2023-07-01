@@ -1,0 +1,14 @@
+public String aOrAn(String word) {
+    //code here
+    String firstLetter = word.substring(0,1).toLowercase();
+    String wordToReturn = '';
+    if( firstLetter == 'a'||  firstLetter == 'e'|| firstLetter == 'i'||
+     firstLetter == 'o'|| firstLetter == 'u' ){
+         wordToReturn = 'an ' + word;
+     }
+     else{
+         wordToReturn = 'a ' + word;
+     }
+     system.debug(wordToReturn);
+     return wordToReturn;
+}
