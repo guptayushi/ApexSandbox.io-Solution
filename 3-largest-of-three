@@ -1,0 +1,17 @@
+public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
+	//code here
+    Integer currentLargest;
+    if(num1>num2){
+        currentLargest = num1;
+    }
+    else{
+        currentLargest = num2;
+    }
+
+    if(currentLargest > num3){
+        return currentLargest;
+    }
+    else{
+        return num3;
+    }
+}
