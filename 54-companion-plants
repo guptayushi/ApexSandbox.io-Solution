@@ -1,0 +1,17 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+    Map<String,List<String>> companionPlantMap = new Map<String,List<String>>();
+    companionPlantMap.put('lettuce', new List<String>{'cucumbers','onions'});
+    companionPlantMap.put('cucumbers', new List<String>{'lettuce'});
+    companionPlantMap.put('onions', new List<String>{'lettuce','carrots','tomatoes'});
+    companionPlantMap.put('tomatoes', new List<String>{'onions'});
+    companionPlantMap.put('carrots', new List<String>{'onions'});
+
+    List<String> companionsAllowed = companionPlantMap.get(plant1);
+    if(companionsAllowed.contains(plant2)){
+        return true;
+    }
+    else{
+         return false;
+    }
+}
